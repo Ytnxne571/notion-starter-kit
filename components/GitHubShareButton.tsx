@@ -1,9 +1,7 @@
-import * as React from 'react'
-
-import styles from './styles.module.css'
-
 export const GitHubShareButton: React.FC = () => {
-  return (
+  const [visible, setVisible] = useState(true);
+
+  return visible ? (
     <a
       href='https://github.com/transitive-bullshit/nextjs-notion-starter-kit'
       target='_blank'
@@ -11,6 +9,13 @@ export const GitHubShareButton: React.FC = () => {
       className={styles.githubCorner}
       aria-label='View source on GitHub'
     >
+      <svg width='80' height='80' viewBox='0 0 250 250' style={{ fill: '#70B7FD', color: '#fff', position: 'absolute' }}>
+      {/* 这里是图标的矢量图形代码 */}
+      </svg>
+    </a> 
+  ) : null;
+};
+
       <svg
         width='80'
         height='80'
