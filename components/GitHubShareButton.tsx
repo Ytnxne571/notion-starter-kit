@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import styles from './GitHubShareButton.module.css';
 
 export const GitHubShareButton: React.FC = () => {
@@ -31,5 +31,3 @@ export const GitHubShareButton: React.FC = () => {
     </a>
   );
 };
-
-      
